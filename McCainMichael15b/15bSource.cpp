@@ -3,28 +3,23 @@
 // 04/30/2022
 
 #include <iostream>
-#include <string>
 
 using namespace std;
 
 // prototypes
 
-template<typename INT>
-void Half(INT num)
+int Half(int num)
 {
-
+	num = static_cast<float>(num);
+	num = round(num / 2);
+	num = static_cast<int>(num);
+	return num;
 }
 
-template<typename FLOAT>
-void Half(FLOAT num)
+template<typename DF> 
+DF Half(DF num)
 {
-
-}
-
-template<typename DOUBLE>
-void Half(DOUBLE num)
-{
-
+	return num / 2.0;
 }
 
 int main()
