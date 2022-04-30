@@ -4,7 +4,6 @@
 
 #include <iostream>
 #include <string>
-#include "15bSource.h"
 
 using namespace std;
 // prototypes
