@@ -6,12 +6,26 @@
 #include <string>
 
 using namespace std;
+
 // prototypes
-int Half(int);
 
-float Half(float);
+template<typename INT>
+void Half(INT num)
+{
 
-double Half(double);
+}
+
+template<typename FLOAT>
+void Half(FLOAT num)
+{
+
+}
+
+template<typename DOUBLE>
+void Half(DOUBLE num)
+{
+
+}
 
 int main()
 {
@@ -19,7 +33,7 @@ int main()
 	float b = 5.0f;
 	int c = 3;
 
-	cout<< Half(a) << endl;
+	cout << Half(a) << endl;
 	cout << Half(b) << endl;
 	cout << Half(c) << endl;
 
@@ -29,19 +43,4 @@ int main()
 	cout << endl << endl;
 	system("pause");
 	return 0;
-}
-
-int Half(int num) 
-{
-
-}
-
-float Half(float num)
-{
-
-}
-
-double Half(double num)
-{
-
 }
